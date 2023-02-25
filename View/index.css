@@ -6,4 +6,35 @@
 
 body {
     font-size: 12;
+    width: 100%;
+    height: 100vh;
 }
+
+#root {
+    --navbar-color: pink;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--navbar-color);
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.nav-item {
+    padding: 20px;
+}
+
+.car-img {
+    width: 100%;
+    object-fit: cover;
+}
+
