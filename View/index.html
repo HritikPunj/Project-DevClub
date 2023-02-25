@@ -11,8 +11,8 @@
 <body>
     <div id="root">
         <nav class="navbar">
-            <a href="#home">
-                <img class="car-img" src="./icons/carpool-90.png">
+            <a id="logo" href="#home">
+                <img class="car-img" src="../logo.png">
             </a>
             <div class="navbar-nav">
                 <ul>
@@ -27,12 +27,33 @@
         <div id="content">
             <section id="home">
                 <div class="option-container">
-                    <button type="button" class="user-option">
-                        As a Driver
-                    </button>
-                    <button type="button" class="user-option">
-                        As a Rider
-                    </button>
+                    <div class="options">
+                        <button type="button" class="user-option" onclick="displayDriverForm()">
+                            As a Driver
+                        </button>
+                        <button type="button" class="user-option" onclick="displayRiderForm()">
+                            As a Rider
+                        </button>
+                    </div>
+                    <div class="form-wrapper">
+                        <form action="" class="driver-form">
+                            <div class="input-wrapper">
+                                <label for="fname">First Name:</label>
+                                <input type="text" id="fname" name="fname">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="lname">Last Name:</label>
+                                <input type="text" id="lname" name="lname"><br>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="plate">License Plates:</label>
+                                <input type="text" maxlength="7" id="plate" name="plate">
+                            </div>
+                        </form>
+                        <form action="" class="rider-form">
+
+                        </form>
+                    </div>
                 </div>
             </section>
         </div>
